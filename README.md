@@ -2,10 +2,10 @@
 
 TEAM: CREATORS
 
-NAME: SARTHAK ARORA (LEADER) 
-             HARSH JINDAL
-             SARTHAK SHARMA
-             DIVYANSH BANSAL
+NAME: SARTHAK ARORA (LEADER) <br>
+             DIVYANSH BANSAL <br>
+              HARSH JINDAL <br>
+             SARTHAK SHARMA <br>
 
 ## Problem Statement:
 Create a word game that has to include the following features/aspects:
@@ -55,6 +55,3 @@ Yes 100%.
 
 3. Multiple sizes of the boggle board (4x4 to 6x6).
 Sol: Yes you can convert it into: 1 ) 4x4  2) 3x3
-
-## SCREENSHOTS:
-    
