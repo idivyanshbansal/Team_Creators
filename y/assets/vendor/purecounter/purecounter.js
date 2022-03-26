@@ -1,20 +1,4 @@
 /* Initialize the Game */
-/*
-var list = [];
-var STANDARD_CUBES = [
-    "IEEEE", "NSUTT", "IEEEE", "CUSBB",
-    "AOOTTW", "CIMOTU", "DEILRX", "DELRVY",
-    "DISTTY", "EEGHNW", "EEINSU", "EHRTVW",
-    "EIOSST", "ELRTTY", "HIMNQU", "HLNNRZ"
-];
-var BIG_BOGGLE_CUBES = [
-    "AAAFRS", "AAEEEE", "AAFIRS", "ADENNN", "AEEEEM",
-    "AEEGMU", "AEGMNN", "AFIRSY", "BJKQXZ", "CCNSTW",
-    "CEIILT", "CEILPT", "CEIPST", "DDLNOR", "DDHNOT",
-    "DHHLOR", "DHLNOR", "EIIITT", "EMOTTT", "ENSSSU",
-    "FIPRSY", "GORRVW", "HIPRRY", "NOOTUW", "OOOTTU"
-];
-*/
 var list = [
     'aaarfdswe', 'aareeheee', 'aafvcfirs', 'gadbvennn', 'wasfeeeem',
     'aeegfmweu', 'aegmgfbnn', 'avcfirfsy', 'bjkqxqdfz', 'ccengbsqt',
@@ -52,7 +36,7 @@ function board() { //generate a random 5*5 size board
         if (upside === 'Q') upside = 'Qu';
         board_temp.push(upside);
     }
-    for (let i = 0; i < board_temp.length; i = i + 5) {
+    for (let i = 0; i < board_temp.length; i = i + 6) {
         line = [];
         line.push(board_temp[i]);
         line.push(board_temp[i + 1]);
