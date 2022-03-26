@@ -1,9 +1,12 @@
+/* Initialize the Game */
 var list = [
     'aaarfdswe', 'aareeheee', 'aafvcfirs', 'gadbvennn', 'wasfeeeem',
+    'aeegfmweu', 'aegmgfbnn', 'avcfirfsy', 'bjkqxqdfz', 'ccengbsqt',
     'aeegfmweu', 'aegmgfbnn', 'avcfirfsy', 'bjkqxqdfz', 'ccengbsqt',
     'ceiidwelt', 'caseilwep', 'ceiapscct', 'ddhfbtnot', 'dhhgcvlor',
     'dhlewfnor', 'dhdslfnor', 'eiiitsdnt', 'emotdfstt', 'ensssewqu',
     'fizxpxrsy', 'gofvrrvvw', 'iprrqwery', 'nootuwdsf', 'oodfsottu',
+    'werdgtfgt', 'wersdtfyh', 'waesdrgtf', 'wertyutyu', 'xcvbhjmnh',
     'ceiidwelt', 'caseilwep', 'ceiapscct', 'ddhfbtnot', 'dhhgcvlor'
 ];
 
@@ -35,7 +38,7 @@ function board() { //generate a random 5*5 size board
         if (upside === 'Q') upside = 'Qu';
         board_temp.push(upside);
     }
-    for (let i = 0; i < board_temp.length; i = i + 5) {
+    for (let i = 0; i < board_temp.length; i = i + 6) {
         line = [];
         line.push(board_temp[i]);
         line.push(board_temp[i + 1]);
@@ -43,12 +46,14 @@ function board() { //generate a random 5*5 size board
         line.push(board_temp[i + 3]);
         line.push(board_temp[i + 4]);
         line.push(board_temp[i + 5]);
+        line.push(board_temp[i + 6]);
+        line.push(board_temp[i + 7]);
         board.push(line);
     }
     //console.log(board);
 
-    //render board on HTML 4x4
-    for (var row = 0; row < 6; row++) {
+
+    for (var row = 0; row < 5; row++) {
         for (var col = 0; col < 6; col++) {
             character = board[row][col];
             var button = "<button type='button' class='btn dice'" + "row=" + row + " col=" + col + ">" + character + "</button>";
@@ -56,16 +61,7 @@ function board() { //generate a random 5*5 size board
             row_selector.innerHTML += button;
         }
     }
-    /* 5x5 Board
-    for (var row = 0; row < 5; row++) {
-        for (var col = 0; col < 5; col++) {
-            character = board[row][col];
-            var button = "<button type='button' class='btn dice'" + "row=" + row + " col=" + col + ">" + character + "</button>";
-            var row_selector = document.getElementById("row" + row);
-            row_selector.innerHTML += button;
-        }
-    }
-    */
+
     /* 6x6 Board
     for (var row = 0; row < 6; row++) {
         for (var col = 0; col < 6; col++) {
