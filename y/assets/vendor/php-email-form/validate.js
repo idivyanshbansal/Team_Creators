@@ -51,7 +51,7 @@ function board() { //generate a random 5*5 size board
         if (upside === 'Q') upside = 'Qu';
         board_temp.push(upside);
     }
-    for (let i = 0; i < board_temp.length; i = i + 4) {
+    for (let i = 0; i < board_temp.length; i = i + 5) {
         line = [];
         line.push(board_temp[i]);
         line.push(board_temp[i + 1]);

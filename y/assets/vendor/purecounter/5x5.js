@@ -1,4 +1,3 @@
-/* Initialize the Game */
 /*
 var list = [];
 var STANDARD_CUBES = [
@@ -20,8 +19,7 @@ var list = [
     'aeegfmweu', 'aegmgfbnn', 'avcfirfsy', 'bjkqxqdfz', 'ccengbsqt',
     'ceiidwelt', 'caseilwep', 'ceiapscct', 'ddhfbtnot', 'dhhgcvlor',
     'dhlewfnor', 'dhdslfnor', 'eiiitsdnt', 'emotdfstt', 'ensssewqu',
-    'fizxpxrsy', 'gofvrrvvw', 'iprrqwery', 'nootuwdsf', 'oodfsottu',
-    'werdgtfgt', 'wersdtfyh', 'waesdrgtf', 'wertyutyu', 'xcvbhjmnh'
+    'fizxpxrsy', 'gofvrrvvw', 'iprrqwery', 'nootuwdsf', 'oodfsottu'
 ];
 
 
@@ -58,15 +56,13 @@ function board() { //generate a random 5*5 size board
         line.push(board_temp[i + 1]);
         line.push(board_temp[i + 2]);
         line.push(board_temp[i + 3]);
-        line.push(board_temp[i + 4]);
-        line.push(board_temp[i + 5]);
         board.push(line);
     }
     //console.log(board);
 
     //render board on HTML 4x4
-    for (var row = 0; row < 6; row++) {
-        for (var col = 0; col < 6; col++) {
+    for (var row = 0; row < 4; row++) {
+        for (var col = 0; col < 4; col++) {
             character = board[row][col];
             var button = "<button type='button' class='btn dice'" + "row=" + row + " col=" + col + ">" + character + "</button>";
             var row_selector = document.getElementById("row" + row);
