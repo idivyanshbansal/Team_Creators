@@ -57,14 +57,13 @@ function board() { //generate a random 5*5 size board
         line.push(board_temp[i + 1]);
         line.push(board_temp[i + 2]);
         line.push(board_temp[i + 3]);
-        line.push(board_temp[i + 4]);
         board.push(line);
     }
     //console.log(board);
 
     //render board on HTML 4x4
-    for (var row = 0; row < 5; row++) {
-        for (var col = 0; col < 5; col++) {
+    for (var row = 0; row < 4; row++) {
+        for (var col = 0; col < 4; col++) {
             character = board[row][col];
             var button = "<button type='button' class='btn dice'" + "row=" + row + " col=" + col + ">" + character + "</button>";
             var row_selector = document.getElementById("row" + row);

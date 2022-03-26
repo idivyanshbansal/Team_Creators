@@ -1,11 +1,10 @@
-/* Initialize the Game */
 var list = [
     'aaarfdswe', 'aareeheee', 'aafvcfirs', 'gadbvennn', 'wasfeeeem',
     'aeegfmweu', 'aegmgfbnn', 'avcfirfsy', 'bjkqxqdfz', 'ccengbsqt',
     'ceiidwelt', 'caseilwep', 'ceiapscct', 'ddhfbtnot', 'dhhgcvlor',
     'dhlewfnor', 'dhdslfnor', 'eiiitsdnt', 'emotdfstt', 'ensssewqu',
     'fizxpxrsy', 'gofvrrvvw', 'iprrqwery', 'nootuwdsf', 'oodfsottu',
-    'werdgtfgt', 'wersdtfyh', 'waesdrgtf', 'wertyutyu', 'xcvbhjmnh'
+    'ceiidwelt', 'caseilwep', 'ceiapscct', 'ddhfbtnot', 'dhhgcvlor'
 ];
 
 
@@ -36,7 +35,7 @@ function board() { //generate a random 5*5 size board
         if (upside === 'Q') upside = 'Qu';
         board_temp.push(upside);
     }
-    for (let i = 0; i < board_temp.length; i = i + 6) {
+    for (let i = 0; i < board_temp.length; i = i + 5) {
         line = [];
         line.push(board_temp[i]);
         line.push(board_temp[i + 1]);
