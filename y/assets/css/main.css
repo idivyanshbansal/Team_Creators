@@ -80,8 +80,8 @@
  
  #board {
      display: inline-block;
-     border: 5px solid #FFCA08;
-     background-color: #398BD4;
+     border: 5px solid #b22330;
+     background-color: #ff3346;
      padding: 15px;
      margin: 10px auto 10px auto;
      text-align: center;
@@ -101,8 +101,9 @@
  #score-table {
      width: 330px;
      margin: 10px auto;
-     background-color: rgb(5, 5, 5);
-     border: 5px solid #FFCA08;
+     background-color: #000000;
+     border: 5px solid #b22330;
+     border-radius: 4px;
  }
  
  #score-table div {
@@ -114,7 +115,7 @@
  #score-table div span {
      display: table-cell;
      width: 50%;
-     border: 2px solid #FFCA08;
+     border: 2px solid #ff3346;
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
      box-sizing: border-box;
